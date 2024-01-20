@@ -2,7 +2,7 @@ import {Request, Response} from "express";
 import {creteAnItem, deleteAnItemById, getItems, updateAnItemById} from "../models/item-model";
 
 export class ItemController {
-    // Create (POST METHOD)
+
     public static async createItem(req: Request, res: Response) {
         const values = req.body
         if (!values.name || !values.price) return res.status(400).json({message: 'Name and price are required!'})
