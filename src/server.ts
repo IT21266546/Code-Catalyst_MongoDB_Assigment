@@ -22,5 +22,5 @@ if (process.env.DATABASE && process.env.PASSWORD) {
 
 // Start the express app and listen on the specified port
 app.listen(PORT, () => {
-    console.log(`🚀 Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
